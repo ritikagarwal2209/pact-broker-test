@@ -1,6 +1,7 @@
 name: Provider Verification
 on:
   workflow_dispatch:
+  repository_dispatch:
 jobs:
   verify:
     runs-on: ubuntu-latest
