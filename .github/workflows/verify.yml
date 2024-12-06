@@ -1,11 +1,10 @@
-name: Provider Verification
+name: Respond to Contract Verification Event
 on:
-  workflow_dispatch:
   repository_dispatch:
+    types: [contract_requiring_verification_published]
 jobs:
-  verify:
+  respond_to_event:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run the application
-        run: python main.py
+      - name: Echo success message
+        run: echo "SUCCESS - TRIGGER received - contract_requiring_verification_published"
