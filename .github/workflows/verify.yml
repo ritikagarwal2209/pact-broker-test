@@ -1,4 +1,3 @@
-YAML
 name: Provider Verification
 on:
   workflow_dispatch:
