@@ -3,7 +3,7 @@ on:
   repository_dispatch:
     types: [contract_requiring_verification_published]
 permissions:
-  contents: read
+  contents: write
 jobs:
   respond_to_event:
     runs-on: ubuntu-latest
